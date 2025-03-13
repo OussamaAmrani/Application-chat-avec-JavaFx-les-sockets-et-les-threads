@@ -1,0 +1,28 @@
+.text-area {
+    -fx-control-inner-background: #f5f5f5;
+    -fx-font-family: "Segoe UI";
+}
+
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: #ddd;
+    -fx-border-radius: 5px;
+}
+
+.button {
+    -fx-background-color: #2196F3;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+}
+
+.button:hover {
+    -fx-background-color: #1976D2;
+}
+/* chat.css */
+.text-area {
+    -fx-background-color: #f0f0f0;
+}
+.text-field {
+    -fx-background-color: #ffffff;
+}

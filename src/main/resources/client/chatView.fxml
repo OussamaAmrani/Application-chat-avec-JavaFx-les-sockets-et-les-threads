@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="client.ChatController" stylesheets="@chat.css">
+    <top>
+        <VBox spacing="10" style="-fx-padding: 20;">
+            <Label text="Nom d'utilisateur:"/>
+            <TextField fx:id="usernameInput" promptText="Entrez votre nom"/>
+            <Button fx:id="connectButton" text="Connexion" onAction="#connectToServer"/>
+        </VBox>
+    </top>
+    <center>
+        <ScrollPane fitToWidth="true">
+            <TextArea fx:id="chatArea" editable="false" style="-fx-text-alignment: left;"/>
+        </ScrollPane>
+    </center>
+    <bottom>
+        <VBox spacing="10" style="-fx-padding: 10;">
+            <TextField fx:id="messageInput" promptText="Tapez votre message ici" onAction="#sendMessage"/>
+            <Button text="Envoyer" onAction="#sendMessage"/>
+        </VBox>
+    </bottom>
+</BorderPane>
